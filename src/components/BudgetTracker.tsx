@@ -1,6 +1,5 @@
 import { useMemo } from "react"
 import { Activity } from "../types"
-import { formatCurrency } from "../helpers"
 import BudgetDisplay from "./BudgetDisplay"
 
 type BudgetTrackerProps = {
