@@ -2,6 +2,7 @@ import { useEffect, useReducer } from "react"
 import ActivityList from "./components/ActivityList"
 import Form from "./components/Form"
 import { ActivityReducer, initialState } from "./reducers/activity-reducer"
+import BudgetTracker from "./components/BudgetTracker"
 
 function App() {
 
@@ -33,6 +34,14 @@ function App() {
           <Form
             state ={state}
             dispatch = {dispatch}
+          />
+        </div>
+      </section>
+
+      <section className="px-5 py-10 bg-gray-500">
+        <div className="max-w-4xl mx-auto">
+          <BudgetTracker
+            activities = {state.activities}
           />
         </div>
       </section>
